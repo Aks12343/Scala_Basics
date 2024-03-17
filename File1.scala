@@ -3,10 +3,10 @@ import scala.io.Source
 
 object File2{
   def main(args: Array[String]): Unit = {
-    val e = new PrintWriter(new File("Scala1.csv"))
+    val e = new PrintWriter(new File("Scala1.txt"))
     e.write("Hello, World!")
     e.close()
-    val p = Source.fromFile(new File("Scala1.csv"))
+    val p = Source.fromFile(new File("Scala1.txt"))
     var counter = 0
     for(line<-p.getLines())
     {
