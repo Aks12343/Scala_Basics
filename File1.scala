@@ -10,8 +10,6 @@ object File2{
     var counter = 0
     for(line<-p.getLines())
     {
-      var arr=Array(line.split(" "))
-      arr.foreach((ele)=>println(ele.mkString("Array(", ", ", ")")))
       println("No of Words are: " +line.split(" ").length)
       for(str<-line.split(" ")){
         counter+=str.length
